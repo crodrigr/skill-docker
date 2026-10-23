@@ -78,6 +78,64 @@ Las dos tecnologías **aíslan** aplicaciones, pero a distinto nivel:
 | **Aislamiento** | Muy fuerte (SO propio) | Fuerte, pero compartiendo núcleo |
 | **Ideal para** | Ejecutar otro SO completo, aislamiento máximo | Empaquetar y desplegar aplicaciones |
 
+### 🔍 ¿Qué es el hipervisor y qué es el Docker Engine?
+
+Son las dos piezas de color (amarilla y verde azulada) de las pilas del diagrama: **la capa que
+reparte el equipo entre varias cosas aisladas**. Cada tecnología tiene la suya.
+
+<details>
+<summary><strong>🧠 Hipervisor</strong> (clic para desplegar)</summary>
+
+Es el programa que **crea y administra máquinas virtuales**. Divide el hardware real
+(procesador, memoria, disco) en pedazos y le entrega uno a cada VM, que cree estar en un
+computador completo y por eso instala su **propio sistema operativo**.
+
+| Tipo | Dónde corre | Ejemplos |
+|---|---|---|
+| **Tipo 1** (*bare metal*) | Directo sobre el hardware, sin SO debajo | VMware ESXi, Microsoft Hyper-V, KVM (Linux) |
+| **Tipo 2** (*alojado*) | Como una aplicación más dentro de tu SO | VirtualBox, VMware Workstation |
+
+Analogía: el administrador de un **edificio de departamentos**. Reparte la electricidad y el
+agua entre los departamentos (VMs); cada uno es independiente y tiene su propia cocina,
+baño y llaves (su SO).
+
+</details>
+
+<details>
+<summary><strong>⚙️ Docker Engine</strong> (clic para desplegar)</summary>
+
+Es el programa que **crea y ejecuta contenedores**. No reparte hardware ni arranca otro
+sistema operativo: le pide al **núcleo del SO anfitrión** que aísle cada aplicación como si
+estuviera sola. Se compone de:
+
+| Pieza | Qué hace |
+|---|---|
+| **`docker` (cliente / CLI)** | Los comandos que escribís (`docker run`, `docker ps`…) |
+| **`dockerd` (demonio)** | El servicio que corre en segundo plano, recibe esos comandos y gestiona imágenes, contenedores, redes y volúmenes |
+| **containerd y runc** | Los componentes de bajo nivel que realmente arrancan los contenedores |
+
+Para aislar usa dos funciones del **núcleo de Linux**:
+
+- **Namespaces** → cada contenedor ve solo *sus* procesos, red y archivos.
+- **cgroups** → limitan cuánta CPU y memoria puede usar cada contenedor.
+
+Analogía: el administrador de un **coworking**. Todos comparten la misma infraestructura
+(electricidad, internet, cocina = el SO), pero cada equipo tiene su escritorio y su
+espacio delimitado.
+
+</details>
+
+| | Hipervisor | Docker Engine |
+|---|---|---|
+| **Crea** | Máquinas virtuales | Contenedores |
+| **Reparte** | El hardware | Los recursos del SO anfitrión |
+| **Cada unidad trae** | Su propio sistema operativo | Solo la aplicación y sus librerías |
+| **Se apoya en** | El hardware (con ayuda del procesador) | El núcleo del sistema operativo |
+
+> 🪟🍎 En Windows y macOS, Docker Desktop arranca una VM Linux muy liviana (con un
+> hipervisor) y dentro de ella corre el Docker Engine. Por eso allí *sí* hay un hipervisor
+> debajo, aunque lo uses para contenedores.
+
 > 💡 **No son rivales.** Es común correr contenedores *dentro* de máquinas virtuales (por
 > ejemplo, en la nube). En Windows y macOS, Docker Desktop usa una VM ligera por debajo,
 > porque los contenedores de Linux necesitan un núcleo Linux.
