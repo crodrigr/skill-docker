@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 330" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pasos para publicar: docker build, docker tag, docker push a Docker Hub y docker pull desde otro equipo">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker></defs>
+<rect width="980" height="330" fill="#fff"/>
+<text x="490.0" y="30" text-anchor="middle" font-size="19" font-weight="bold" fill="#1f2937">Publicar y compartir una imagen</text>
+<rect x="20" y="90" width="140" height="80" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+<text x="90.0" y="127.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Dockerfile</text>
+<text x="90.0" y="143.0" text-anchor="middle" font-size="11.5" fill="#374151">+ código</text>
+<rect x="260" y="90" width="160" height="80" rx="6" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="340.0" y="127.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">contador:1.0</text>
+<text x="340.0" y="143.0" text-anchor="middle" font-size="11.5" fill="#374151">imagen local</text>
+<rect x="520" y="90" width="200" height="80" rx="6" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="620.0" y="126.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#111827">TU_USUARIO/contador:1.0</text>
+<text x="620.0" y="140.0" text-anchor="middle" font-size="11.5" fill="#374151">mismo contenido, otro nombre</text>
+<rect x="820" y="90" width="140" height="80" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="890.0" y="127.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Docker Hub</text>
+<text x="890.0" y="144.5" text-anchor="middle" font-size="11.5" fill="#374151">hub.docker.com</text>
+<path d="M160 130 L258 130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="209" y="118" text-anchor="middle" font-size="11.5" fill="#1f2937" font-weight="bold">docker build</text>
+<path d="M420 130 L518 130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="469" y="118" text-anchor="middle" font-size="11.5" fill="#1f2937" font-weight="bold">docker tag</text>
+<path d="M720 130 L818 130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="769" y="118" text-anchor="middle" font-size="11.5" fill="#1f2937" font-weight="bold">docker push</text>
+<rect x="820" y="230" width="140" height="64" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="890.0" y="258.5" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Otro equipo</text>
+<text x="890.0" y="273.5" text-anchor="middle" font-size="11.5" fill="#374151">o servidor</text>
+<path d="M890 230 L890 172" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="832" y="208" text-anchor="middle" font-size="11.5" fill="#1f2937" font-weight="bold">docker pull</text>
+<text x="40" y="230" text-anchor="start" font-size="12.5" fill="#b91c1c" font-weight="bold">Antes de subir: docker login</text>
+<text x="40" y="252" text-anchor="start" font-size="12" fill="#374151">Formato del nombre: usuario/repositorio:etiqueta</text>
+<text x="40" y="272" text-anchor="start" font-size="12" fill="#374151">tag no copia la imagen: solo le agrega un nombre.</text>
+</svg>

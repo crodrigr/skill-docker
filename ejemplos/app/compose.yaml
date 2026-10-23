@@ -1,0 +1,18 @@
+# Dos servicios que se levantan juntos: la app (se construye con el Dockerfile) y Redis.
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"          # puerto-del-equipo:puerto-del-contenedor
+    environment:
+      REDIS_HOST: redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - datos-redis:/data    # el contador sobrevive aunque se borre el contenedor
+
+volumes:
+  datos-redis:

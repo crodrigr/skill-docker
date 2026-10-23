@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Comparación de la pila de capas: máquinas virtuales con sistema operativo propio frente a contenedores que comparten el del anfitrión">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker></defs>
+<rect width="900" height="470" fill="#fff"/>
+<text x="450.0" y="30" text-anchor="middle" font-size="19" font-weight="bold" fill="#1f2937">Máquinas virtuales vs contenedores</text>
+<text x="225" y="62" text-anchor="middle" font-size="14" fill="#7c3aed" font-weight="bold">MÁQUINA VIRTUAL</text>
+<rect x="40" y="400" width="370" height="44" rx="6" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="225.0" y="427.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Hardware</text>
+<rect x="40" y="350" width="370" height="44" rx="6" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="225.0" y="377.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Sistema operativo del anfitrión</text>
+<text x="675" y="62" text-anchor="middle" font-size="14" fill="#2563eb" font-weight="bold">CONTENEDORES</text>
+<rect x="490" y="400" width="370" height="44" rx="6" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="675.0" y="427.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Hardware</text>
+<rect x="490" y="350" width="370" height="44" rx="6" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="675.0" y="377.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Sistema operativo del anfitrión</text>
+<rect x="40" y="300" width="370" height="44" rx="6" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="225.0" y="327.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Hipervisor</text>
+<rect x="48" y="76" width="116" height="218" rx="6" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="106" y="94" text-anchor="middle" font-size="12" fill="#6d28d9" font-weight="bold">VM 1</text>
+<rect x="54" y="100" width="104" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="106.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="54" y="156" width="104" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="106.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<rect x="54" y="212" width="104" height="74" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="106.0" y="246.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">SO invitado</text>
+<text x="106.0" y="262.0" text-anchor="middle" font-size="11.5" fill="#374151">completo</text>
+<rect x="172" y="76" width="116" height="218" rx="6" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="230" y="94" text-anchor="middle" font-size="12" fill="#6d28d9" font-weight="bold">VM 2</text>
+<rect x="178" y="100" width="104" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="230.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="178" y="156" width="104" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="230.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<rect x="178" y="212" width="104" height="74" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="230.0" y="246.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">SO invitado</text>
+<text x="230.0" y="262.0" text-anchor="middle" font-size="11.5" fill="#374151">completo</text>
+<rect x="296" y="76" width="116" height="218" rx="6" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="354" y="94" text-anchor="middle" font-size="12" fill="#6d28d9" font-weight="bold">VM 3</text>
+<rect x="302" y="100" width="104" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="354.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="302" y="156" width="104" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="354.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<rect x="302" y="212" width="104" height="74" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="354.0" y="246.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">SO invitado</text>
+<text x="354.0" y="262.0" text-anchor="middle" font-size="11.5" fill="#374151">completo</text>
+<rect x="490" y="300" width="370" height="44" rx="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/>
+<text x="675.0" y="327.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Docker Engine</text>
+<rect x="498" y="76" width="112" height="218" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="554" y="94" text-anchor="middle" font-size="12" fill="#1d4ed8" font-weight="bold">Contenedor 1</text>
+<rect x="504" y="100" width="100" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="554.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="504" y="156" width="100" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="554.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<text x="554" y="246" text-anchor="middle" font-size="11.5" fill="#6b7280" font-style="italic">sin SO propio</text>
+<rect x="622" y="76" width="112" height="218" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="678" y="94" text-anchor="middle" font-size="12" fill="#1d4ed8" font-weight="bold">Contenedor 2</text>
+<rect x="628" y="100" width="100" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="678.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="628" y="156" width="100" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="678.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<text x="678" y="246" text-anchor="middle" font-size="11.5" fill="#6b7280" font-style="italic">sin SO propio</text>
+<rect x="746" y="76" width="112" height="218" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="802" y="94" text-anchor="middle" font-size="12" fill="#1d4ed8" font-weight="bold">Contenedor 3</text>
+<rect x="752" y="100" width="100" height="50" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="802.0" y="130.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">App</text>
+<rect x="752" y="156" width="100" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="802.0" y="186.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Librerías</text>
+<text x="802" y="246" text-anchor="middle" font-size="11.5" fill="#6b7280" font-style="italic">sin SO propio</text>
+<text x="225" y="462" text-anchor="middle" font-size="12" fill="#6d28d9" font-weight="bold">Cada VM arranca un SO entero: pesada y lenta</text>
+<text x="675" y="462" text-anchor="middle" font-size="12" fill="#1d4ed8" font-weight="bold">Comparten el SO del anfitrión: ligeros y rápidos</text>
+</svg>
