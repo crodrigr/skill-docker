@@ -1,0 +1,4 @@
+# Artefactos de ejecucion y del editor
+__pycache__/
+*.pyc
+.DS_Store
